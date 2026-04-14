@@ -10,6 +10,8 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 
+import pandas as pd
+
 # -----------------------------
 # INIT APP
 # -----------------------------
@@ -104,7 +106,11 @@ def predict(
     username: str = Depends(verify_token)
 ):
     model = get_model()
-    prediction = model.predict([[data.size, data.rooms]])[0]
+    
+    # 14-04-2026 - Updated to use DataFrame input for better compatibility
+    # prediction = model.predict([[data.size, data.rooms]])[0]
+    df_input = pd.DataFrame([[data.size, data.rooms]], columns=["size", "rooms"])
+    prediction = model.predict(df_input)[0]
 
     return {
         "user": username,
