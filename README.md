@@ -101,6 +101,7 @@ python app.py
 Open:
 
 http://localhost:8000
+
 http://localhost:8000/docs
 
 ---
@@ -205,7 +206,7 @@ Educational use only
 
 - Create a Project at Vercel from your repository at GitHub with the code of this FastAPI
 
-- Create the envirement variables from .env at Vercel with Groq API Key and the Credentials for Auth
+- Create the envirement variables from .env at Vercel with Secret Key for JWT and the Credentials for Auth
 
 - Make a commit to your GitHub
 
