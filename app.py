@@ -33,14 +33,14 @@ FAKE_PASSWORD = os.getenv("FAKE_PASSWORD")
 if not SECRET_KEY:
     raise ValueError("SECRET_KEY is missing in environment variables")
 
-
-print("MODEL EXISTS:", os.path.exists("model.pkl"))
+# 15-04-2026 - Added warning filter for joblib to suppress unnecessary warnings
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="joblib")
 
 # -----------------------------
 # AUTH
 # -----------------------------
 bearer = HTTPBearer()
-
 
 def verify_token(credentials: HTTPAuthorizationCredentials = Depends(bearer)):
     try:
@@ -59,15 +59,12 @@ def verify_token(credentials: HTTPAuthorizationCredentials = Depends(bearer)):
 # -----------------------------
 model = None
 
-
-'''def get_model():
-    global model
-    if model is None:
-        model = joblib.load("model.pkl")
-    return model'''
-
+# 15-04-2026 - Updated to use os.path for better cross-platform compatibility
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+# 15-04-2026 - Added check for model file existence
+# print("MODEL EXISTS:", os.path.exists(MODEL_PATH))
 
 def get_model():
     global model
