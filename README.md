@@ -200,15 +200,4 @@ FastAPI + JWT + Machine Learning
 
 Educational use only
 
-
-# Deployment to Vercel
-
-- Take a look at the file "vercel.json"
-
-- Create a Project at Vercel from your repository at GitHub with the code of this FastAPI
-
-- Create the envirement variables from .env at Vercel with Secret Key for JWT and the Credentials for Auth
-
-- Make a commit to your GitHub
-
-- Go to Vercel and check that the build and deployment happened and your site is in Production
+Happy coding :-)
