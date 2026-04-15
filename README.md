@@ -198,6 +198,6 @@ FastAPI + JWT + Machine Learning
 
 ## 📜 License
 
-Educational use only
+Educational use only ...
 
 Happy coding :-)
