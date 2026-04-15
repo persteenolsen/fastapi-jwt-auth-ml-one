@@ -60,10 +60,19 @@ def verify_token(credentials: HTTPAuthorizationCredentials = Depends(bearer)):
 model = None
 
 
-def get_model():
+'''def get_model():
     global model
     if model is None:
         model = joblib.load("model.pkl")
+    return model'''
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+def get_model():
+    global model
+    if model is None:
+        model = joblib.load(MODEL_PATH)
     return model
 
 
