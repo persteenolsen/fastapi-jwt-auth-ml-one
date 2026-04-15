@@ -34,8 +34,8 @@ if not SECRET_KEY:
     raise ValueError("SECRET_KEY is missing in environment variables")
 
 # 15-04-2026 - Added warning filter for joblib to suppress unnecessary warnings
-import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module="joblib")
+#import warnings
+#warnings.filterwarnings("ignore", category=UserWarning, module="joblib")
 
 # -----------------------------
 # AUTH
@@ -64,7 +64,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 
 # 15-04-2026 - Added check for model file existence
-# print("MODEL EXISTS:", os.path.exists(MODEL_PATH))
+print("MODEL EXISTS:", os.path.exists(MODEL_PATH))
 
 def get_model():
     global model
