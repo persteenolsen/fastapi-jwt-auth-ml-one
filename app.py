@@ -17,7 +17,7 @@ import pandas as pd
 # -----------------------------
 app = FastAPI(
     title="FastAPI + JWT + ML (Lazy Loaded Model)",
-    description="14-04-2026 - House Price Prediction API with lazy-loaded ML model",
+    description="15-04-2026 - House Price Prediction API with lazy-loaded ML model",
     version="1.0.0",
 )
 

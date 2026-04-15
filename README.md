@@ -2,7 +2,7 @@
 
 Last updated:
 
-- 14-04-2026
+- 15-04-2026
 
 # 🏠 House Price Prediction API (FastAPI + JWT + ML)
 
@@ -184,7 +184,8 @@ Response:
 - Add database (PostgreSQL)
 - Add user roles
 - Dockerize project
-- Deploy to cloud
+- Deploy to other cloud than Vercel if wanted
+- Splitting the app.py into files and folders for better structure
 
 ---
 
