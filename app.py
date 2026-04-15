@@ -33,6 +33,9 @@ FAKE_PASSWORD = os.getenv("FAKE_PASSWORD")
 if not SECRET_KEY:
     raise ValueError("SECRET_KEY is missing in environment variables")
 
+
+print("MODEL EXISTS:", os.path.exists("model.pkl"))
+
 # -----------------------------
 # AUTH
 # -----------------------------
