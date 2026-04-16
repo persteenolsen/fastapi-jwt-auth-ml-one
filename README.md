@@ -2,7 +2,7 @@
 
 Last updated:
 
-- 15-04-2026
+- 16-04-2026
 
 # 🏠 House Price Prediction API (FastAPI + JWT + ML)
 
