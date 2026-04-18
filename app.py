@@ -16,8 +16,8 @@ import pandas as pd
 # INIT APP
 # -----------------------------
 app = FastAPI(
-    title="FastAPI + JWT + ML (Lazy Loaded Model)",
-    description="18-04-2026 - House Price Prediction API with lazy-loaded ML model.",
+    title="FastAPI + JWT + ML (v1)",
+    description="18-04-2026 - House Price Prediction API with ML pipeline + JWT auth.",
     version="1.0.0",
     contact={
         "name": "Per Olsen",
