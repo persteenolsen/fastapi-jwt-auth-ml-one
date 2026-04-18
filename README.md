@@ -1,10 +1,8 @@
-# Python + FastAPI + JWT Auth + ML
+# 🏠 House Price Prediction API (FastAPI + JWT + ML)
 
 Last updated:
 
 - 18-04-2026
-
-# 🏠 House Price Prediction API (FastAPI + JWT + ML)
 
 A simple machine learning API built with FastAPI that predicts house prices based on house size and number of rooms.  
 The API is secured using JWT authentication and serves a trained scikit-learn model.
