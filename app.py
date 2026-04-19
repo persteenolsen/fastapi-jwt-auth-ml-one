@@ -110,7 +110,7 @@ def login(req: LoginRequest):
 
 @app.get("/")
 def root():
-    return {"message": "FastAPI + JWT + ML (Lazy Loading) is running"}
+    return {"message": "FastAPI + JWT + ML v1 is running"}
 
 
 @app.post("/predict")
