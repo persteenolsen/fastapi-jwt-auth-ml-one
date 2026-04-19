@@ -17,7 +17,7 @@ import pandas as pd
 # -----------------------------
 app = FastAPI(
     title="FastAPI + JWT + ML (v1)",
-    description="18-04-2026 - House Price Prediction API with ML pipeline + JWT auth.",
+    description="19-04-2026 - House Price Prediction API with ML pipeline + JWT auth.",
     version="1.0.0",
     contact={
         "name": "Per Olsen",
