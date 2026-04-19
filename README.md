@@ -2,7 +2,7 @@
 
 Last updated:
 
-- 18-04-2026
+- 19-04-2026
 
 A simple machine learning API built with FastAPI that predicts house prices based on house size and number of rooms.  
 The API is secured using JWT authentication and serves a trained scikit-learn model.
