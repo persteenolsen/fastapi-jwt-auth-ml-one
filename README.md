@@ -167,7 +167,7 @@ Response:
 
 ---
 
-## 📈 Use Cases
+## 📈 What this project demonstrates
 
 - Learn FastAPI + ML integration
 - Build secure ML APIs
